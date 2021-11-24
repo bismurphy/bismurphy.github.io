@@ -12,7 +12,7 @@ for given_console in console_lists:
         given_console.remove("")
     console_name = given_console[0]
     games = given_console[1:]
-    text_output+=f"<br><h1>{console_name}</h1><p>"
+    text_output+=f"<h1>{console_name}</h1><p>"
     text_output+="<br>".join(games) + "</p>"
 
 with open('blankpage.html') as template:
