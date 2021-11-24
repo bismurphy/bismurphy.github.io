@@ -12,8 +12,8 @@ for given_console in console_lists:
         given_console.remove("")
     console_name = given_console[0]
     games = given_console[1:]
-    text_output+=f"<h1>{console_name}</h1><p>"
-    text_output+="<br>".join(games) + "</p>"
+    text_output+=f"\n<h1>{console_name}</h1>\n<p>\n"
+    text_output+="<br>\n".join(games) + "\n</p>"
 
 with open('blankpage.html') as template:
     pagetext = template.read()
