@@ -19,6 +19,7 @@ with open('blankpage.html') as template:
     pagetext = template.read()
     header = pagetext.split('<div id="content">')[0] + '<div id="content">\n'
     header = header.replace("Sample Blank Page","My Video Game Collection")
+    header = header.replace("Example Page","Game Collection")
     footer = "\n</div>" + pagetext.split("</div>")[-1] + "\n"
 
 with open('games.html','w') as outfile:
